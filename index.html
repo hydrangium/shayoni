@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78b1532e4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="images/video.mp4" type="video/mp4">
+
+            </video>
+        <nav>
+            <img src="images/mylogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Third year undergraduate student</p>
+            <h1>Hi, I'm <span>Shayoni</span><br> Mahato from India</h1>
+        </div>
+        </div>
+    </div>
+    <!---------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutim.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>A</span>bout me</h1>
+                    <p class="about">Hello! I'm Shayoni Mahato, a passionate college student pursuing a degree in Electrical Engineering at National Institute of Technology, Durgapur. With a thirst for knowledge and a curiosity about the world around me, I'm on a journey to expand my horizons and develop valuable skills. My area of interest is software development and my college provided immense opportunities to work in this area. When I'm not buried in textbooks, I enjoy doing graphic designing. These activities have not only enriched my college experience but also helped me in my holistic development. As I progress through my academic journey, I'm excited to dive into the world of coding, all while cherishing the connections I make along the way. Feel free to join me on this adventure and explore the world of software development. Let's connect!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python and basics of C++</span><br>Programming with Python</li>
+                            <li><span>Web Development (HTML,CSS,Javascript)</span><br>Web app Development</li>
+                            <li><span>Graphic Designing</span><br>Designing with Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>This website is built as a part of my Web Development Project</li>
+                            <li><span>Graphic Designing</span><br>I have been contributing to Student's Alumni Interaction Cell as a Graphic Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>NIT Durgapur</span><br>Currently a pre-final year Electrical Engineering student</li>
+                            <li><span>Hemsheela Model School</span><br>95.2%</li>
+                            <li><span>Carmel Convent High School</span><br>97.2%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title services"><span>M</span>y Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p class="desc">Passionate web designer with a knack for creating intuitive, visually stunning interfaces that elevate user experiences.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p class="desc"> I showcase a commitment to excellence through clean, elegant code and innovative problem-solving.</p>
+                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p class="desc">With a keen eye for aesthetics, I specialize in delivering impactful designs that communicate messages effectively.</p>
+                    <a href="https://en.wikipedia.org/wiki/Graphic_design">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!------------Portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span>M</span>y Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <video autoplay loop muted plays-inline>
+                        <source src="images/ml.mp4" type="video/mp4" >
+                    </video>
+                    <!----<img src="images/ml.jpeg">----->
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        <p>My project involves the detection of corona discharge in extremely high voltage transmission lines. My approach to achieving this goal is by using a Lucid Vision UV Camera to capture images of transmission lines where corona discharge is taking place.Then by using image processing and deep learning we tried to detect the exact location of corona discharge in the transmission lines.
+                            Here is the complete description of my work: </p>
+                            <a href="images/project.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video autoplay loop muted plays-inline>
+                        <source src="images/wd1.mp4" type="video/mp4" >
+                    </video>
+                    <!-----<img src="images/work-2.png">------>
+                    <div class="layer">
+                        <h3>Web development</h3>
+                        <p>This portfolio website has been crafted to enhance understanding of web development and achieve a more profound grasp of its intricacies.</p>
+                        <a href="http://127.0.0.1:5501/index.html#about"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video autoplay loop muted plays-inline>
+                        <source src="images/gd1.mp4" type="video/mp4" >
+                    </video>
+                    <!-------<img src="images/work-3.png">----->
+                    <div class="layer">
+                        <h3>Graphic Designing</h3>
+                        <p>Graphic designing is a realm that has always fascinated me. The ability to convey complex ideas and emotions through visuals is a unique and powerful form of communication.What started as a hobby soon turned into a passion as I delved deeper into the intricacies of typography, color theory, and layout design. I've undertaken various projects like designing posters for college events as I was a part of the graphic design team of Students' Alumni Interaction Cell,NIT Durgapur. Each project has been a learning experience, helping me understand the balance between creativity and practicality. As I continue to grow as a designer, I look forward to exploring new design trends and contributing my visual perspective to meaningful projects.Here are few of my designs: </p>
+                        <a href="images/design.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="images/certificate.pdf" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>C</span>ontact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shayonimahato@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7864806076</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Shayoni Mahato/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/shayoni-mahato-bba1b6241/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/hydrangium"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created by Shayoni Mahato.</p>
+        </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzUmzfS1_LKJHkjLFhiqqI4jSlVT7hixTreLX6g1wGrZvdUwYHIb3pzSNtCi82fdsgfCA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHtml=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
